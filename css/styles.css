@@ -1,0 +1,155 @@
+
+*{
+    padding:0;
+    margin:0;
+    
+}
+html, body{
+    height:100%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+ 
+/* NAVIGATION BAR STYLES BEGIN */
+
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-inverse{
+    background-color: black;
+}
+.nav>li{
+    transition: all .3s;
+}
+.nav>li:hover{
+    background-color: gold;
+}
+.navbar-inverse .navbar-brand{
+    color:gold;
+    transition: all .3s;
+}
+.navbar-inverse .navbar-brand:hover{
+    color:black;
+    background-color: gold;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:gold;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: black;
+}
+/* NAVIGATION BAR STYLES END*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* LANDING PAGE STYLES BEGIN*/
+
+header{
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#showcase{
+    background-image: url(../img/landing-pg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#showcase #showcase-overlay{
+    background-color: rgba(0,0,0,0.7);
+    height:100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#showcase h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: center;
+}
+#showcase p{
+    font-size: 20px;
+    text-align: center;
+}
+.landing-button{
+    width: 125px;
+    height:50px;
+    text-align: center;
+}
+#showcase .landing-button{
+    transition: all .5s;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border: #fff 1px solid;
+    padding: 10px 20px;
+}
+#showcase .landing-button:hover{
+    background-color: #fff;
+    color: black;
+}
+/* LANDING PAGE STYLES END*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* ABOUT SECTION STYLES BEGIN*/
+
+#about{
+    color: white;
+    background-color: black;
+}
+#about h1{
+    text-align: center;
+    padding: 20px 10px;
+}
+.instructors{
+    background-color: grey;
+    height: 100%;
+}
+
+.profile{
+    position: relative;
+    background-color: white;
+    height: 50%;
+    margin: 10px 4px;
+}
+
+.profile-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.profile-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .9em;
+}
+
+.profile-overlay:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* ABOUT SECTION STYLES END*/
