@@ -5,29 +5,48 @@
     <title>Elite BJJ</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
 
+
+<!-- NAVIGATION BAR -->
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="#showcase">ELITE</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#showcase">HOME</a></li>
-                <li><a href="#programs">PROGRAMS</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li>
+                    <a href="#showcase">HOME</a>
+                </li>
+                <li>
+                    <a href="#programs">PROGRAMS</a>
+                </li>
+                <li>
+                    <a href="#schedule">SCHEDULE</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#pricing">PRICING</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -35,26 +54,227 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <header id="showcase">
-        <div id="showcase-overlay">
+    <!-- LANDING PAGE -->
+
+    <header class="showcase" id="showcase">
+        <div class="showcase-overlay">
             <h1>Welcome to ELITE</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, maiores?</p>
-            <a href="#about" class="landing-button">Let's Roll</a>
+            <a href="#programs" class="landing-button">Let's Roll</a>
         </div>
     </header>
 
 
-    <!--INSTRUCTORS SECTION-->
+    <!-- PROGRAMS SECTION -->
+    <a class="anchor" id="programs"></a>
 
-    <div class="container-fluid" id="about">
+    <h1 class="mod-h1">Our Programs</h1>
+    <div class="container-fluid">
+        <div class="programs">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="program-card">
+                        <img src="img\programs\jiujitsu.png" alt="" class="program-img">
+                        <h2>BJJ</h2>
+                        <div class="program-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, excepturi!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="program-card">
+                        <img src="img\programs\muaythai.png" alt="" class="program-img">
+                        <h2>Muay Thai</h2>
+                        <div class="program-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, excepturi!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="program-card">
+                        <img src="img\programs\judo.png" alt="" class="program-img">
+                        <h2>MMA</h2>
+
+                        <div class="program-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, excepturi!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, saepe?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, excepturi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="program-card">
+                        <img src="img\programs\wrestling.png" alt="" class="program-img">
+                        <h2>Conditioning</h2>
+
+                        <div class="program-text">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, excepturi!</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptatibus!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, voluptatibus!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, vero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <a class="anchor" id="schedule"></a>
+
+    <h1 class="mod-h1">Our Schedule</h1>
+    <div class="container-fluid schedule">
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Sunday</td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                    <td>Saturday</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 - 9:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 1:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1:00 - 2:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2:00 - 3:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3:00 - 4:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4:00 - 5:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5:00 - 6:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6:00 - 7:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- END PROGRAMS SECTION  -->
+
+
+    <!--INSTRUCTORS SECTION-->
+    <a class="anchor" id="about"></a>
+
+    <h1 class="mod-h1">The Instructors</h1>
+    <div class="container-fluid">
         <div class="instructors">
-            <h1>The Instructors</h1>
             <div class="row">
                 <div class="col-sm-4 col-xs-12 col-md-6 col-lg-4">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -62,9 +282,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-6 col-lg-4">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -72,9 +292,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-4 col-lg-4">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -82,9 +302,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -92,9 +312,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -102,9 +322,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-3 col-lg-2">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -112,9 +332,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-3 col-lg-2">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -122,9 +342,9 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-3 col-lg-2">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
                                 ea nesciunt, quis officia quia recusandae nam?</p>
                         </div>
@@ -132,23 +352,154 @@
                 </div>
                 <div class="col-sm-4 col-xs-6 col-md-3 col-lg-2">
                     <div class="profile">
-                        <img src="img\ProfessorJohn.png" alt="" class="profile-img">
+                        <img src="img\Instructors\ProfessorJohn.png" alt="" class="profile-img">
                         <div class="profile-overlay">
-                            <h1>Professor</h1>
+                            <h2>Professor</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquam voluptas sequi reiciendis
-                                ea nesciunt, quis officia quia recusandae nam?</p>
+                                ea nesciunt, quis officia quia recusandae nam?
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+    <!-- END ABOUT SECTION -->
+
+    <!-- PRICING SECTION -->
+    <a class="anchor" id="pricing"></a>
+
+    <h1 class="mod-h1">The Pricing</h1>
+    <div class="container-fluid pricing">
+        <div class="pricing">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="pricing-card">
+                        <ul>
+                            <li class="p-header">Basic Package</li>
+                            <li>You can only make three friends.</li>
+                            <li>You can only take 15 deep breaths.</li>
+                            <li>One question per training session.</li>
+                            <li>Unlimited fun!</li>
+                            <li class="large">
+                                <b>$$</b>
+                            </li>
+                            <li>
+                                <a href="#signup" class="sign-up">Sign up!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="pricing-card">
+                        <ul>
+                            <li class="p-header">Premium Package</li>
+                            <li>You can make as many friends as you want.*
+                                <br>
+                                <span class="disclaimer">*not guaranteed</span>
+                            </li>
+                            <li>Unlimited deep breaths!</li>
+                            <li>One question per training session!</li>
+                            <li>Unlimited fun!</li>
+                            <li class="large">
+                                <b>$$$</b>
+                            </li>
+                            <li>
+                                <a href="#signup" class="sign-up">Sign up!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DISCOUNTS TABLE -->
+
+    <!-- END PRICING SECTION -->
+
+
+    <!-- CONTACT SECTION -->
+
+    <a class="anchor" id="contact"></a>
+
+    <div class="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 col-sm-6">
+                    <h1>Contact us!</h1>
+                    <h2>Address</h2>
+                    <p>
+                        <i class="fa fa-map-marker"></i> 1111 North BJJ St., Wilmington, NC 28405
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i> +1 910.555.5555
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i> elitebjjwilmington@gmail.com
+                    </p>
+                </div>
+                <div class="col-md-7 col-sm-6 contact-card">
+                    <form action="email.php">
+                        <div class="field">
+                            <label for="">Name</label>
+                            <input type="text" name="Name" required>
+                        </div>
+                        <div class="field">
+                            <label for="">Email</label>
+                            <input type="text" name="Email" required>
+                        </div>
+                        <div class="field">
+                            <label for="">Message</label>
+                            <input type="text" name="Message" required>
+                        </div>
+                        <a href="#submit" class="submit">Submit!</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- GOOGLE MAP SECTION -->
+
+    <div id="googleMap" class="google-map"></div>
+
+
+    <!-- END GOOGLE MAP SECTION -->
+
+    <footer>
+
+        <h3>Stay in touch!</h3>
+        <a href="#facebook" class="fa fa-facebook"></a>
+        <a href="#twitter" class="fa fa-twitter"></a>
+        <a href="#instagram" class="fa fa-instagram"></a>
+        <a href="#google" class="fa fa-google"></a>
+        <a href="linkedin" class="fa fa-linkedin"></a>
+    </footer>
 
 </body>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    function myMap() {
+        myCenter = new google.maps.LatLng(34.2544478, -77.848409);
+        var mapOptions = {
+            center: myCenter,
+            zoom: 15, scrollwheel: false, draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+        marker.setMap(map);
+    }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzbW28dj0bnv6I07ndzOTolxOj2n0t6vg&callback=myMap"></script>
 <script src=".\js\control.js"></script>
 
 </html>

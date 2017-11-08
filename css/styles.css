@@ -2,7 +2,7 @@
 *{
     padding:0;
     margin:0;
-    
+
 }
 html, body{
     height:100%;
@@ -11,9 +11,26 @@ html, body{
 body{
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    padding-top: 50px;
     background-color: white;
 }
- 
+
+
+.mod-h1{
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+    background-color: black;
+    color: white;
+}
+
+.anchor{
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
 /* NAVIGATION BAR STYLES BEGIN */
 
 .navbar{
@@ -24,6 +41,10 @@ body{
 }
 .nav>li{
     transition: all .3s;
+}
+.nav li.active a{
+    background-color: gold !important;
+    color: black !important;
 }
 .nav>li:hover{
     background-color: gold;
@@ -54,13 +75,14 @@ header{
     line-height: 1.6;
 }
 
-#showcase{
-    background-image: url(../img/landing-pg.jpeg);
+.showcase{
+    background-image: url(../img/background/landing-pg.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
-#showcase #showcase-overlay{
+.showcase .showcase-overlay{
     background-color: rgba(0,0,0,0.7);
     height:100%;
     width: 100%;
@@ -71,12 +93,12 @@ header{
     align-items: center;
 
 }
-#showcase h1 {
+.showcase h1 {
     font-size: 50px;
     line-height: 1.2;
     text-align: center;
 }
-#showcase p{
+.showcase p{
     font-size: 20px;
     text-align: center;
 }
@@ -85,7 +107,8 @@ header{
     height:50px;
     text-align: center;
 }
-#showcase .landing-button{
+.showcase .landing-button{
+    margin-top: 24px;
     transition: all .5s;
     font-size: 18px;
     text-decoration: none;
@@ -93,7 +116,7 @@ header{
     border: #fff 1px solid;
     padding: 10px 20px;
 }
-#showcase .landing-button:hover{
+.showcase .landing-button:hover{
     background-color: #fff;
     color: black;
 }
@@ -101,19 +124,103 @@ header{
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
+/* PROGRAMS SECTION STYLES BEGIN*/
+
+.programs{
+    height: 100vh;
+    margin: 20px;
+}
+
+
+.program-card h2{
+    text-align: center;
+    padding: 8px;
+    color: white;
+    margin-top: 0;
+}
+
+.program-card h3{
+    margin-top: 0;
+}
+
+.program-card{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.program-text{
+    background-color: white;
+    padding: 8px;
+}
+
+.program-card a{
+    text-decoration: none;
+}
+
+.program-card img{
+    display: block;
+    margin: auto;
+}
+
+.program-button{
+    transition: all .5s;
+    border: black 2px solid;
+    padding: 8px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+.program-button:hover{
+    color: black;
+    background-color: gold;
+}
+
+
+/* PROGRAMS SECTION STYLES END*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* SCHEDULE SECTION STYLES BEGIN*/
+.schedule{
+    background-image: url(../img/background/schedule.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+table{
+    background-color: white;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 10%;
+}
+
+/* SCHEDULE SECTION STYLES END*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 /* ABOUT SECTION STYLES BEGIN*/
 
-#about{
+.instructors{
     color: white;
-    background-color: black;
+    height: 100%;
 }
-#about h1{
+.instructors h1{
+    color: black;
     text-align: center;
     padding: 20px 10px;
-}
-.instructors{
-    background-color: grey;
-    height: 100%;
 }
 
 .profile{
@@ -144,7 +251,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: .9em;
+    font-size: 1.2em;
 }
 
 .profile-overlay:hover{
@@ -153,3 +260,161 @@ header{
 }
 
 /* ABOUT SECTION STYLES END*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* PRICING SECTION STYLES */
+.pricing{
+    background-image: url(../img/background/kimura.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.pricing h1{
+    text-align: center;
+}
+
+.pricing ul{
+    list-style: none;
+    background-color: white;
+}
+
+.p-header{
+    background-color: gray;
+    font-size: 24px;
+    color: white;
+}
+
+.disclaimer{
+    font-size: 8px;
+    color: rgb(189, 188, 188);
+    float: right;
+}
+.pricing li{
+    border-bottom: 1px solid #ddd;
+    padding: 16px;
+    font-size: 18px;
+}
+.pricing-card{
+    text-align: center;
+    background-color: black;
+    padding:16px;
+    margin: 32px;
+}
+
+.pricing-card .large{
+    text-align: center;
+}
+.pricing a{
+    text-decoration: none;
+}
+.sign-up{
+    transition: all .3s;
+    border: black 1px solid;
+    padding: 8px;
+    color: black;
+}
+.sign-up:hover{
+    color: white;
+    background-color: black;
+}
+/* PRICING SECTION STYLES END*/
+
+/* CONTACT SECTION STYLES */
+.contact{
+    background: black;
+    color:white;
+}
+.contact h1{
+    text-align: center;
+}
+
+.contact .fa{
+    font-size: 24px;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.contact .container-fluid{
+    padding: 16px;
+}
+
+.contact-card{
+    width: 55%;
+    padding: 16px;
+    background: white;
+
+}
+
+.contact input{
+    display: block;
+    border:none;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.contact .field{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.submit{
+    transition: all .3s;
+    float: right;
+    border: 1px solid black;
+    color: black;
+    padding: 8px;
+}
+
+.submit:hover{
+    background: green;
+    color:white;
+    border-color: green;
+}
+
+/* CONTACT SECTION STYLES END*/
+
+
+
+/* GOOGLE MAPS SECTION STYLES BEGIN*/
+
+.google-map{
+    width: 100%;
+    height: 400px;
+}
+/* GOOGLE MAPS SECTION STYLES END*/
+
+
+/* FOOTER */
+
+footer .fa{
+    transition: all .3s;
+    color: black;
+    background-color: gold;
+    font-size: 30px; 
+    padding: 8px; 
+    margin: 5px;
+    width: 50px;
+}
+
+footer h3{
+    margin: 16px 0;
+}
+footer .fa:hover{
+    color: gold;
+    background-color: black;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* FOOTER END */
