@@ -76,7 +76,7 @@ header{
 }
 
 .showcase{
-    background-image: url(../img/background/landing-pg.jpeg);
+    background-image: url(./img/background/landing-pg.jpeg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -187,18 +187,20 @@ header{
 
 /* SCHEDULE SECTION STYLES BEGIN*/
 .schedule{
-    background-image: url(../img/background/schedule.jpg);
-    height: 80vh;
+    background-image: url(./img/background/schedule.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 table{
+    opacity: .9;
+    height: 630px;
     background-color: white;
     margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 td{
     padding: 8px;
@@ -223,6 +225,12 @@ td{
     padding: 20px 10px;
 }
 
+.instructors h2 {
+    text-align: center;
+    margin: 5px;
+    font-size: 2.5vw;
+}
+
 .profile{
     position: relative;
     background-color: white;
@@ -233,30 +241,70 @@ td{
 .profile-img{
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .profile-overlay{
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    overflow: hidden;
     width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-    text-align: center;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.2em;
+    height: 0;
+    transition: .3s ease;
 }
 
-.profile-overlay:hover{
-    opacity: 1;
-    background-color: rgba(0,0,0,0.8);
+.profile:hover .profile-overlay{
+    height: 100%;
+}
+.profile-overlay .text {
+    font-size: 1.05em;
+    color: white;
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 5%;
+}
+
+.profile-overlay .outer {
+    height: 100%;
+    width: 20%; 
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.profile-overlay .inner {
+	height: 100%;
+    width: 85%;
+    position: absolute;
+    left: 8%;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-brown{
+    background-color: rgb(99, 84, 71);
+}
+
+.bg-blue{
+    background-color: rgb(62, 62, 148);
+}
+
+.bg-purple{
+    background-color: rgb(81, 46, 114);
+}
+
+.bg-red{
+    background-color: rgb(231, 67, 67);
+
 }
 
 /* ABOUT SECTION STYLES END*/
@@ -265,8 +313,7 @@ td{
 
 /* PRICING SECTION STYLES */
 .pricing{
-    background-image: url(../img/background/kimura.jpg);
-    height: 90vh;
+    background-image: url(./img/bg/kimura.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -339,14 +386,13 @@ td{
     text-decoration: none;
 }
 
-.contact .container-fluid{
-    padding: 16px;
-}
 
 .contact-card{
-    width: 55%;
     padding: 16px;
     background: white;
+    color: black;
+    margin-bottom: 25px;
+    margin-top: 25px;
 
 }
 
@@ -365,11 +411,15 @@ td{
 }
 
 .submit{
+    width: 100px;
     transition: all .3s;
-    float: right;
     border: 1px solid black;
     color: black;
     padding: 8px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: relative;
 }
 
 .submit:hover{
@@ -416,5 +466,6 @@ footer{
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 /* FOOTER END */
